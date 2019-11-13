@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Indtast Navn</h1>
+<p>Du kan her indtaste hvilket som helst dansk navn, <br />
+    hvis det findes ankestyrrelsens database kan du finde ud af om det er pige,
+    dreng eller unisex</p>
+
+<form action="/home/create" method="post">
+    <label for="Firstname">Navn</label>
+    <input type="text" name="FirstName" id="FirstName" />
+    <input type="submit" name="submit" />
+</form>
