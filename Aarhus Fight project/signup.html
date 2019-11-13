@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aarhus Fight Center</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="start">
+            <div>
+                <h3 class="logo"><i class="fas fa-fist-raised"></i></h3>
+            </div>
+                <div>
+                        <form action="">
+                                <ul class="login">
+                                    <li>
+                                            <label for="medlemsNummer">Medlems Nummer:</label>
+                                            <input type="text" name="medlemsNummer" id="medlemsNummer" placeholder="Dit medlems nr">
+                                    </li>
+                                    <li>
+                                            <label for="password">Password:</label>
+                                            <input type="password" name="password" id="password" placeholder="Password">
+                                    </li>
+                                    <li>
+                                            <input id="btn" type="submit" name="login" value="Login" />
+                                    </li>
+                                </ul> 
+                            </form>
+                </div>
+            
+        </div>
+        
+                <ul class="nav-links">  
+                    <li><a href="index.html">Home</a></li>  
+                    <li><a href="info.html">Info</a></li>
+                    <li><a href="galleri.html">Galleri</a></li>
+                    <li><a class="current" href="signup.html">Nye Medlemmer </a></li>
+                </ul>
+            
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <main>
+            <div class="space"></div>
+        <header>
+            <p>Aarhus </p>
+            <p>Fight Center</p>
+        </header>
+        <div class="opdeler">
+                <section class="picker">
+                        <h3>Kampsport udvælger:</h3>
+                        <p>Er du i tvivl om hvilken Kampsport, der er rigtig for dig, så kan vi hjælpe dig</p>
+                        <br>
+                        <p>Har du erfraing med kampsport?</p>
+                        <label for="ja">Ja</label>
+                        <input type="radio" name="jaNej" id="ja" value="ja" onclick="func();">
+                        <label for="nej">Nej</label>
+                        <input type="radio" name="jaNej" id="nej" value="nej" onclick="func();">
+                        <br><br>
+                        <p>Hvilken type er du til?</p>
+                        <label for="striking">Stående kamp med salg/spark</label>
+                        <input type="radio" name="type" id="striking" value="striking" onclick="func2();">
+                        <br>
+                        <label for="wrestling">Stående med greb/nedtagninger</label>
+                        <input type="radio" name="type" id="wrestling" value="wrestling" onclick="func2();">
+                        <br>
+                        <label for="bjj">liggende kamp med choking</label>
+                        <input type="radio" name="type" id="bjj" value="bjj" onclick="func2();">
+                        <br>
+                        <label for="MMA">Det hele virker interessant</label>
+                        <input type="radio" name="type" id="MMA" value="MMA" onclick="func2();">
+                        <br><br>
+                        <p>Kontakt nivaeu:</p>
+                        <label for="hard">Hård Kontakt</label>
+                        <input type="radio" name="kontakt" id="hard" value="hard" onclick="func3();">
+                        <label for="mellem">Mellem Kontakt</label>
+                        <input type="radio" name="kontakt" id="mellem" value="mellem" onclick="func3();">
+                        <label for="let">Let Kontakt</label>
+                        <input type="radio" name="kontakt" id="let" value="let" onclick="func3();">
+                        <br><br>
+                        <button class="ks_chooser">Find Kampsport</button>
+                        <div class="tekst"></div>
+                    </section>
+            
+                    <section class="indmeldelse">
+                        <h3>Her kan du indsende indmeldelses blanket</h3>
+                        <form class="form" >
+                                <input type="hidden" name="valideringNavn" value="PeterBørlum" />
+                                <label for="fornavn">Fornavn:</label>
+                                <input type="text" name="fornavn" value="" id="fornavn" placeholder="Intast fornavn" required />
+                                <br/>
+                                <label for="efternavn">Efternavn:</label>
+                                <input type="text" name="efternavn" value="" id="efternavn" placeholder="Intast efternavn" required />
+                                <br/> <br>
+                                <label for="email">Email:</label>
+                                <input type="text" name="email" value="" id="email" placeholder="Email-adresse" required />
+                                <br /><br>
+                                <label for="adresse">Adresse:</label>
+                                <input type="text" name="adresse" value="" id="adresse" placeholder="Adresse" required />
+                                <br />
+                                <label for="postnummer">Postnummer:</label>
+                                <input type="number" name="postnummer" value="" id="postnummer" placeholder="Postnummer" required />
+                                <br />
+                                <label for="by">By:</label>
+                                <input type="text" name="by" value="" id="by" placeholder="By" required />
+                                <br /><br>
+                                <label id="reg1" for="reg">Reg:</label>
+                                <input type="number" name="reg" value="" id="reg" placeholder="Reg" required />
+                                <label id="konto1" for="konto">Konto:</label>
+                                <input type="number" name="konto" value="" id="konto" placeholder="Konto" required />
+                                <br />
+                                <label id="cvc1" for="cvc">cvc:</label>
+                                <input type="number" name="cvc" value="" id="cvc" placeholder="cvc" required />
+                                <br><br>
+            
+                                <input id="submitKnap" type="submit" name="indsend" value="Indsend" />
+                                <p class="indsend"></p>
+                        </form>
+                    </section>
+                    <section class="responstekst">
+                        <p class="ksTekst">Kampsportsinfo vises efter du har valgt</p>
+                    </section>
+                    <section class="kicker">
+                        <p class="meldind">Meld dig ind i dag</p>
+                    </section>
+        </div>
+        
+    </main>
+
+    <footer>
+            <div class="contact">
+                <h4>Kontakt:</h4>
+                    <a href="mailto: aarhusfc@gmail.com">aarhusfc@gmail.com</a>
+                    <br>
+                    <a href="tel:+4526136104">+45 26 13 61 04</a>
+                </div>
+                <div class="menu_links">
+                    <h4>Menu links:</h4>
+                    <ul>    
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="info.html">Info</a></li>
+                            <li><a href="galleri.html">Galleri</a></li>
+                            <li><a href="signup.html">Nye Medlemmer </a></li>
+                        </ul>
+                </div>
+                <div>
+                    <h4>Åbningstider:</h4>
+                        <ul>    
+                                <li>Mandag - Fredag: 15 - 21</li>
+                                <li>Lørdag: 10 - 12</li>
+                                <li>Søndag: Lukket</li>
+                            </ul>
+                </div>
+            <div class="developer">
+                <p>Site udviklet af: P12 Media, Copyright &copy; 2019</p>
+            </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="signup.js"></script>
+</body>
+</html>

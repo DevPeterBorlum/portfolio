@@ -1,0 +1,107 @@
+
+
+.opdeler{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+}
+
+label{
+    cursor: pointer;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+p{
+    font-weight: bolder;
+}
+.picker{
+    margin: 20px;
+    border: 3px solid red;
+    padding: 20px;
+    max-width: 500px;
+  
+}
+
+.ks_chooser{
+    margin-bottom: 20px
+}
+
+.indmeldelse{
+    margin: 20px;
+    border: 3px solid red;
+    padding: 20px;
+    max-width: 500px;
+   
+}
+
+.responstekst{
+    margin: 20px;
+    border: 3px solid red;
+    padding: 20px;
+    max-width: 500px;
+   
+}
+
+.kicker{
+    margin: 20px;
+    border: 3px solid red;
+    padding: 20px;
+    max-width: 500px;
+    background-image: url(../../img/victory.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
+}
+
+.ksTekst{
+    font-weight: 500;
+}
+
+.indmeldelse label{
+    display:inline-block; width:100px;
+}
+
+#reg{
+    width: 50px
+}
+#reg1{
+    width: 30px;
+}
+#konto1{
+    width: 40px;
+}
+
+#cvc1{
+    width: 30px;
+}
+#cvc{
+    width: 50px;
+}
+
+.indsend{
+    margin: 20px 0 0 170px;
+    color: green;
+}
+
+.meldind{
+    font-size: 2em;
+}
+
+@media screen and (max-width: 768px) {
+    .opdeler{
+        grid-template-columns: 1fr;
+    }
+
+    .picker{
+        grid-row: 1;
+    }
+    .indmeldelse{
+        grid-row: 3;
+    }
+
+    .ksTekst{
+        grid-row: 2;
+    }
+
+}

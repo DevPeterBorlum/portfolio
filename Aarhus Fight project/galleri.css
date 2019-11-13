@@ -1,0 +1,99 @@
+.billeder{
+    margin:  20px;
+    position: relative;
+    max-width: 45%;
+    left: 20%;
+}
+
+.mineBilleder{
+    display: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+h3{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+
+.frem, .tilbage{
+cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+
+}
+
+.frem {
+
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .frem:hover, .tilbage:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .billedTekst {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  .navn{
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+   
+  }
+
+  .c1{
+    margin:  20px;
+    position: relative;
+    width: 45%;
+    left: 20%;
+    height: auto;
+    background-color: lightgrey;
+  }
+
+  .complete{
+    margin:  20px;
+    position: relative;
+    width: 45%;
+    left: 20%;
+    height: auto;
+    background-color: greenyellow;
+    text-align: center;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 10%;
+    display: none;
+  }
+
+  .upload-tekst{
+    font-size: 5em;
+    color: azure;
+    padding-top: 50px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  .knapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }

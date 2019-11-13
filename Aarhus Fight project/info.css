@@ -1,0 +1,63 @@
+.inst-info{
+    margin: 20px;
+    border-bottom: 1px dotted black;
+}
+
+.instructors{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.instructors div img{
+    max-width: 100%;
+    height: auto;
+}
+
+.t-tider{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.dage{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.dage button{
+    cursor: pointer;
+}
+
+table{
+    margin: 20px;
+    border-collapse: collapse;
+}
+td {
+    height: 100px;
+    width: 300px;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: center;
+}
+
+ #t-tirsdag, #t-onsdag, #t-torsdag, #t-fredag{
+    display: none;
+}
+
+.border-class{
+    margin: 0;
+    padding: 0;
+    border: solid 1px black;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .instructors{
+        grid-template-columns: 1fr 1fr;
+    }
+}
