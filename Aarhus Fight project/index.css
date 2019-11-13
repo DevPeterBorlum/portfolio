@@ -1,0 +1,156 @@
+
+.about{
+    margin: 20px 0 20px 20px;
+    border-bottom: 1px dotted black;
+}
+
+.sporte{
+    font-weight: 600;
+}
+
+.containers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    margin: 20px 0 0 20px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.containers img{
+    filter: drop-shadow(0px 3px 2px black);
+    border-radius: 5%;
+}
+
+.nyheder{
+    grid-row: 1/4;
+    grid-column: 1;
+}
+
+.shop{
+    grid-row: 1;
+    grid-column: 2/5;
+    position: relative;
+}
+
+.img-tekst{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    z-index: 2;
+    opacity: 0;
+}
+
+.shop:hover{
+    background-color: darkgrey;
+}
+
+.shop img:hover{
+    opacity: 0.1;
+    
+}
+
+.shop:hover .img-tekst{
+    opacity: 1;
+    color: white;
+    font-size: 3em;
+}
+
+.kalender{
+    grid-row: 2/4;
+    grid-column: 4;
+}
+
+.kalender-dele b{
+    margin: 50px 0 0 0;
+}
+
+.update{
+    grid-row: 2/4;
+    grid-column: 2/ 4;
+}
+
+#img-budo{
+    max-width: 100%;
+    height: auto;
+}
+
+#img-klubhus{
+    max-width: 100%;
+    height: auto;
+}
+#img-guld{
+    max-width: 100%;
+    height: auto;
+}
+
+.sponsor{
+    margin-top: 2em;
+}
+
+.sponsor h3{
+    margin: 0 0 0 10px;
+    font-size:2em;
+    border-bottom: 1px dotted black;
+}
+
+.sponsorer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(auto, 300px);
+}
+
+.sponsorer :nth-child(1){
+    background-image: url('../../img/grundfos-logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sponsorer :nth-child(2){
+    background-image: url('../../img/mærsk-logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sponsorer :nth-child(3){
+    background-image: url('../../img/kampstrup-logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .sponsorer{
+        grid-template-columns: 1fr;
+    }
+    .containers{
+        grid-template-columns: 1fr 1fr;
+    }
+    .nyheder{
+        grid-row: 2/4;
+        grid-column: 1;
+    }
+    
+    .shop{
+        grid-row: 1;
+        grid-column: 1/3;
+    }
+    
+    .kalender{
+        grid-row: 2/4;
+        grid-column: 2;
+    }
+    
+    .update{
+        grid-row: 4/6;
+        grid-column: 1/ 3;
+    }
+
+    .img-tekst{
+        top: 30%;
+        left: 30%;
+    }
+
+}
