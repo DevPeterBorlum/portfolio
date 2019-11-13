@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.indhold, .talrække, .felt, .overskrift{
+    border: solid 1px black;
+}
+
+.tabel{
+    float: right;
+    margin-left: 100px;
+    width: 400px;
+    height: 250px;
+}
+
+.overskrift{
+    width: 395px;
+    float: right;
+    margin: 10px 3px 0 0;
+    text-align: center;
+    background-color: gray;
+}
+
+.kort{
+    margin: 2em;
+    width: 500px;
+    height: 300px;
+    display: flex;
+}
+
+.first{
+    transform: rotate(90deg);
+    width: 10px;
+    height: 40px;
+    position: relative;
+    top: 8vh;
+    left: 6vh;
+}
+
+.felt{
+    width: 30px;
+    text-align: center;
+    font:  30px Bold;
+    cursor: pointer;
+}
+
+#btn{
+    margin: 10px 0 0 250px;
+}
+
+input{
+    width: 50px;
+}
+
+
+.indsæt{
+    margin-left: 220px;
+}
